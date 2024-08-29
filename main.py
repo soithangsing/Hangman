@@ -118,6 +118,26 @@ hangman_draw_speed = [
     )
 ]
 
-difficulty_setting = inquirer.prompt(hangman_draw_speed)
+difficulty_setting_speed = inquirer.prompt(hangman_draw_speed).get("draw_speed").split()[0]
 
-print(difficulty_setting.get("draw_speed"))
+hangman_speed_setting_1 = [hangman_main_scene_1, hangman_main_scene_2, hangman_main_scene_3, hangman_main_scene_4, hangman_main_scene_5, hangman_main_scene_6, hangman_main_scene_7]
+
+hangman_speed_setting_2 = [hangman_main_scene_1, hangman_main_scene_2, hangman_main_scene_5, hangman_main_scene_7]
+
+hangman_word_difficulty = [
+    inquirer.List(
+        "word_difficulty",
+        message="Choose word difficulty (move with arrow keys)",
+        choices=["Easy","Medium","Veteran","Custom"]
+    )
+]
+
+word_difficulty = inquirer.prompt(hangman_word_difficulty).get("word_difficulty")
+
+
+def play_game(difficulty_setting_speed_input: str, word_difficulty_input: str):
+    pass
+
+# random.choice(list_name)
+
+print(word_difficulty)
