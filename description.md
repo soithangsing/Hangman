@@ -33,6 +33,8 @@ Players will be able to choose difficulty for the game
 Easy difficulty -> 7 Lives
 Hard difficulty -> 4 Lives
 
+-> Need a function that fills in the blanks with every occurence of the letter
+
 # How do you export a python cli app? How do you link different python files to each other? How do you make flashing hanging man title?
 
 <!-- https://patorjk.com/software/taag/#p=display&f=Cursive&t=Type%20Something%20 -->
